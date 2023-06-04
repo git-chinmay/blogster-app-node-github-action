@@ -5,4 +5,5 @@ module.exports = {
   mongoURI:
     "mongodb+srv://botacct111:N985pJsx3UrVZKIC@cluster0.7uxnjxq.mongodb.net/blog_dev?retryWrites=true&w=majority",
   cookieKey: "123123123",
+  redisUrl: "redis://127.0.0.1:6379"
 };

@@ -28,7 +28,8 @@ beforeEach(async ()=>{
 
     // Visiting the blogpost page
     page = await Page.build();
-    await page.goto('localhost:3000');
+    // await page.goto('localhost:3000');
+    await page.goto('http://localhost:3000'); // For running in Travis
 })
 
 //Will run after each test

@@ -3,9 +3,10 @@
 const mongoose = require('mongoose');
 const redis = require('redis');
 const util = require('util');
+const keys = require('../config/keys');
 
-const redisURL = 'redis://127.0.0.1:6379'
-const client = redis.createClient(redisURL);
+
+const client = redis.createClient(keys.redisUrl);
 //client.get = util.promisify(client.get); //no longer using 'get' after introducing programetic cach epiry
 client.hget = util.promisify(client.hget);
 
